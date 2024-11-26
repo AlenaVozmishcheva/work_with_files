@@ -49,7 +49,7 @@ print()
 было записано, построчно без разрывов между строками."""
 
 def write_text():
-    with open('data_path_1/test_file_1.txt', 'w', encoding='utf-8')as file:
+    with open('test_file_1.txt', 'w', encoding='utf-8')as file:
         file.write('Если б мишки были пчелами,\n')
         file.write('То они бы нипочем,\n')
         file.write('Никогда и не подумали,\n')
@@ -58,5 +58,10 @@ def write_text():
 write_text()
 
 
+def read_text():
+    with open('test_file_1.txt', 'r', encoding='utf-8')as file:
+         lines = file.read()
+         print(lines.strip())
+    return
 
-
+read_text()
