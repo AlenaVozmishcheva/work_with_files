@@ -20,3 +20,14 @@ print()
 
 full_path_1 = os.path.join(os.getcwd(), "data_path_2", "test_file_3.txt")
 print(f"Нормализованный абсолютный путь к файлу test_file_3.txt {full_path_1}")
+print()
+
+new_dir = "data_path_2/new_folder"
+os.mkdir(new_dir)
+path = os.path.join(os.getcwd(), "data_path_2", "new_folder")
+print(f"Путь к созданной папке: {path}")
+
+os.rmdir("data_path_2/new_folder")
+
+
+
